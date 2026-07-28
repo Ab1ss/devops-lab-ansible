@@ -1,0 +1,12 @@
+---
+common_packages:
+  - bash-completion
+  - ca-certificates
+  - curl
+  - git
+  - gnupg
+  - jq
+  - qemu-guest-agent
+  - unzip
+  - vim
+  - wget

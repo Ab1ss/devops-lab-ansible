@@ -1,0 +1,8 @@
+---
+- name: Apply common configuration to lab servers
+  hosts: lab
+  become: true
+  gather_facts: true
+
+  roles:
+    - common
