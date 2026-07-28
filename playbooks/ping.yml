@@ -1,0 +1,13 @@
+---
+- name: Verify access to lab servers
+  hosts: lab
+  gather_facts: true
+
+  tasks:
+    - name: Show managed host information
+      ansible.builtin.debug:
+        msg:
+          - "Host: {{ inventory_hostname }}"
+          - "OS: {{ ansible_distribution }} {{ ansible_distribution_version }}"
+          - "Kernel: {{ ansible_kernel }}"
+          - "IPv4: {{ ansible_default_ipv4.address }}"

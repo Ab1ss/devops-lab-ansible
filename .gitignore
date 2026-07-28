@@ -1,0 +1,21 @@
+# Ansible temporary files
+*.retry
+.ansible/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Decrypted secrets
+*.decrypted
+*.plain
+*.tmp
+
+# Editors
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
